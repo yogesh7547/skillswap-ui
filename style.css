@@ -1,0 +1,737 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    padding: 0.5rem 3rem;
+    scroll-behavior: smooth;
+
+}
+
+@media (max-width:768px) {
+
+    html,
+    body {
+        padding: 0.5rem 1rem;
+      
+        
+    }
+}
+
+
+header {
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    /* padding: 1.5rem; */
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 3rem 1rem;
+
+}
+
+
+
+
+.nav {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+    border-radius: 50px;
+    background-color: rgb(57, 56, 56);
+    width: 440px;
+    height: 40px;
+
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav a:hover {
+    color: rgb(126, 137, 137);
+}
+
+
+/* .hamburger{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    display: none;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+ }
+
+  .sticks{
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    color: black;
+    
+ } */
+
+.signup {
+    padding: 1rem;
+
+}
+
+.signup button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+    height: 35px;
+    width: 120px;
+    font-weight: 700;
+
+}
+
+
+.signup button:hover {
+    box-shadow: 0px 0px 10px 4px rgb(6, 108, 232);
+}
+
+@media (max-width:768px) {
+
+
+    header {
+        width: 90%;
+        /* background-color: red; */
+        font-size: 10px;
+        padding: 0 2.7rem;
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        /* gap: 60vw; */
+        /* margin: 0 2.7rem; */
+    }
+
+
+    /* .hamburger{
+        height: 30px;
+        width: 30px;
+        background-color: red;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+     } */
+     .nav{
+        display: none;
+     }
+    
+
+    .signup {
+        display: none;
+    }
+
+
+
+}
+
+
+
+
+main {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.hero {
+    height: 600px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://framerusercontent.com/images/CvsXCxJ8rnw9Lm7nxLHI32gDLAA.png?scale-down-to=1024);
+    background-color: rgb(214, 192, 192);
+    background-blend-mode: darken;
+    background-size: cover;
+    border-radius: 20px;
+
+
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+    font-size: 70px;
+    color: white;
+    font-weight: 700;
+}
+
+.hero h2 {
+    color: rgb(176, 181, 185);
+    margin: 0.5rem;
+    font-size: 20px;
+}
+
+.hero button {
+    color: #fff;
+    margin-top: 1rem;
+    border-radius: 30px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 520;
+    background-color: #0000003d;
+    backdrop-filter: blur(10px);
+}
+
+.hero button:hover {
+    background-color: black;
+    box-shadow: 0px 0px 10px 4px rgb(229, 227, 227);
+}
+
+.how-it-works {
+    margin-top: 3rem;
+    padding: 0 3rem;
+    color: #fff;
+    display: grid;
+    /* grid-template-rows: repeat(2,1fr); */
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1rem;
+}
+
+.how-it-works h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 1rem;
+    text-align: center;
+    font-size: 50px;
+}
+
+.how-it-works .elem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+}
+
+.elem img {
+    border-radius: 30px;
+}
+
+.elem h1 {
+    font-size: 35px;
+}
+
+.elem p {
+    font-size: 20px;
+    max-width: 250px;
+    color: rgb(198, 196, 195);
+}
+
+
+@media (max-width:768px) {
+    main {
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero {
+        height: 450px;
+
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    .how-it-works {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .how-it-works h1 {
+        padding: 1rem;
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .how-it-works .elem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 500px;
+    }
+
+    .elem h1 {
+        font-size: 35px;
+        margin: 0.5rem;
+    }
+
+    .elem p {
+        font-size: 25px;
+        max-width: 200px;
+    }
+
+
+}
+
+.why-skill-swap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 1fr 1fr;
+    color: white;
+    gap: 1rem;
+}
+
+.why-skill-swap-h1 {
+
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    padding: 0rem;
+    font-size: 50px;
+    margin-top: 2rem;
+}
+
+.why-skill-swap .block {
+    height: 250px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 30px;
+
+    padding: 0rem 0.5rem 0.5rem;
+    margin: 0 0 2rem 2rem;
+}
+
+.why-skill-swap .block h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.why-skill-swap .block p {
+    font-size: 20px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.why-skill-swap .block button {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.688);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 15px;
+    margin-top: 0.5rem;
+}
+
+.why-skill-swap .block button:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 4px rgb(0, 0, 0);
+    color: black;
+}
+
+
+.green {
+    background: linear-gradient(0deg, rgb(92, 249, 92), rgb(2, 84, 2));
+}
+
+.blue {
+    background: linear-gradient(0deg, rgb(87, 147, 245), rgb(2, 53, 79));
+}
+
+.yellow {
+    background: linear-gradient(0deg, rgb(232, 238, 59), rgb(74, 82, 4));
+}
+
+.purple {
+    background: linear-gradient(0deg, rgb(193, 73, 241), rgb(66, 6, 72));
+}
+
+.description {
+    margin: 4rem 0 0;
+    min-height: 250px;
+    max-width: 700px;
+    /* background-color: red; */
+}
+
+.description h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.description p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 3rem;
+    color: rgb(198, 196, 195);
+
+}
+
+@media (max-width:768px) {
+    .why-skill-swap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+
+
+        /* background-color: red; */
+    }
+
+    .why-skill-swap-h1 {
+        text-align: center;
+        padding: 0rem;
+        font-size: 40px;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .why-skill-swap .block {
+        height: 250px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 30px;
+
+        padding: 0rem 0.5rem 0.5rem;
+        margin: 0 2rem 2rem;
+    }
+
+    .why-skill-swap .block h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .why-skill-swap .block p {
+        font-size: 18px;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+
+    .description {
+        margin: 4rem 0 0;
+        min-height: 250px;
+        max-width: 700px;
+        /* background-color: red; */
+    }
+
+    .description h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 2rem;
+        color: #fff;
+    }
+
+    .description p {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 3rem;
+        color: rgb(198, 196, 195);
+
+    }
+
+}
+
+
+
+.form {
+    min-height: 350px;
+    width: 80vw;
+    background-color: rgba(56, 56, 56, 0.638);
+    margin-top: 4rem;
+    text-align: center;
+
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+.form h1 {
+    padding: 1.5rem;
+    font-size: 50px;
+    color: white;
+
+}
+
+.form h2 {
+    padding: 0rem 1.5rem 1rem;
+    font-size: 25px;
+    color: aliceblue;
+
+
+}
+
+.form input {
+    width: 500px;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 1rem;
+    margin: 2rem 2rem 1rem;
+}
+
+.form button {
+    width: 500px;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 1rem;
+    margin: 0 2rem 2rem;
+    background-color: black;
+    color: white;
+}
+
+.form button:hover {
+    box-shadow: 0px 0px 10px 4px rgb(6, 108, 232);
+}
+
+.form h3 {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+
+
+@media(max-width:768px) {
+    .form {
+        min-height: 350px;
+        width: 80vw;
+        background-color: rgba(56, 56, 56, 0.638);
+        margin-top: 4rem;
+        text-align: center;
+
+        border-radius: 30px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form h1 {
+        padding: 1.5rem;
+        font-size: 40px;
+        color: white;
+
+    }
+
+    .form h2 {
+        padding: 0rem 1.5rem 1rem;
+        font-size: 20px;
+        color: aliceblue;
+
+
+    }
+
+    .form input {
+        width: 60vw;
+        height: 2rem;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        padding: 0 1rem;
+        margin: 2rem 2rem -0.5rem;
+    }
+
+    .form button {
+        width: 60vw;
+        height: 2rem;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        padding: 0 1rem;
+        margin: 0 2rem 2rem;
+        background-color: black;
+        color: white;
+    }
+
+    .form button:hover {
+        box-shadow: 0px 0px 10px 4px rgb(6, 108, 232);
+    }
+
+    .form h3 {
+        color: white;
+        font-size: 10px;
+        margin-bottom: 1rem;
+    }
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    min-height: 300px;
+    width: 80vw;
+    background-color: rgba(56, 56, 56, 0.638);
+    margin-top: 4rem;
+    text-align: center;
+    border-radius: 30px 30px 0 0;
+    padding: 3rem 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.footer .logo {
+    font-size: 20px;
+    color: white;
+}
+
+.footer .first-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .first-row h2 {
+    color: white;
+    margin: 1rem;
+}
+
+.footer .first-row a {
+    color: #fff;
+    margin: 0.5rem;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.footer .second-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .second-row h2 {
+    color: white;
+    margin: 1rem;
+}
+
+.footer .second-row a {
+    color: #fff;
+    margin: 0.5rem;
+    font-size: 15px;
+}
+
+.footer a:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        min-height: 300px;
+        width: 80vw;
+        background-color: rgba(56, 56, 56, 0.638);
+        margin-top: 4rem;
+        text-align: center;
+        border-radius: 30px 30px 0 0;
+        padding: 1rem 1rem 0;
+        display: block;
+    }
+
+    .footer .logo {
+        font-size: 20px;
+        color: white;
+    }
+
+    .footer .first-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .first-row h2 {
+        color: white;
+        margin: 2rem 0 0;
+        font-size: 15px;
+    }
+
+    .footer .first-row a {
+        color: #fff;
+        margin: 0.5rem;
+        font-size: 10px;
+    }
+
+    .footer .second-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .second-row h2 {
+        color: white;
+        margin: 2rem 0 0;
+        font-size: 15px;
+    }
+
+    .footer .second-row a {
+        color: #fff;
+        margin: 0.5rem;
+        font-size: 10px;
+    }
+
+    .footer a:hover {
+        color: gray;
+        cursor: pointer;
+    }
+}
